@@ -1,0 +1,87 @@
+import { NavLink } from "react-router-dom";
+import icedCoffe from "../../assets/iced-coffee-1.png";
+import CoffeCup from "../../assets/coffee.png";
+import Teacup from "../../assets/tea-cup.png";
+import Milkshake from "../../assets/milkshake.png";
+import drink from "../../assets/drink.png";
+import cookie from "../../assets/cookie.png";
+
+export default function MenuNav() {
+  const navItems = [
+    {
+      title: "نوشیدنی های گرم بر پایه قهوه",
+      path: "/menu/Coffee",
+      icon: CoffeCup,
+      alt: "coffee cup",
+    },
+    {
+      title: "نوشیدنی های سرد بر پایه قهوه",
+      path: "/menu/IcedCoffee",
+      icon: icedCoffe,
+      alt: "iced coffee",
+    },
+    {
+      title: "چای و دمنوش",
+      path: "/menu/Tea",
+      icon: Teacup,
+      alt: "tea",
+    },
+    {
+      title: "بستنی و شیک",
+      path: "/menu/Milkshake",
+      icon: Milkshake,
+      alt: "milkshake",
+    },
+    {
+      title: "نوشیدنی های سرد",
+      path: "/menu/drink",
+      icon: drink,
+      alt: "drink",
+    },
+    {
+      title: "کیک و کوکی",
+      path: "/menu/cookie",
+      icon: cookie,
+      alt: "cookie",
+    },
+  ];
+
+  return (
+    <>
+      <nav
+        className="  crimson-text-regular
+        flex
+        gap-4 lg:gap-17
+        mt-8  
+        px-4 md:px-10 lg:px-16
+        py-2
+        overflow-x-auto
+        overflow-y-hidden
+        no-scrollbar 
+        "
+      >
+        {navItems.map((item) => (
+          <div
+            key={item.path}
+            className="
+            p-[10px]
+            flex flex-row
+            shrink-0
+            items-center
+            rounded-xl
+            shadow-[0_4px_10px_rgba(190,185,174,0.45)]
+            transition-all duration-200 ease-out
+            hover:-translate-y-1
+      "
+          >
+            <NavLink to={item.path} className="leading-[50px]">
+              {item.title}
+            </NavLink>
+
+            <img src={item.icon} alt={item.alt} className="w-[50px]" />
+          </div>
+        ))}
+      </nav>
+    </>
+  );
+}
