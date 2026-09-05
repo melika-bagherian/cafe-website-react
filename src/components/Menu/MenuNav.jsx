@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import icedCoffe from "../../assets/iced-coffee-1.png";
-import CoffeCup from "../../assets/coffee.png";
-import Teacup from "../../assets/tea-cup.png";
-import Milkshake from "../../assets/milkshake.png";
-import drink from "../../assets/drink.png";
-import cookie from "../../assets/cookie.png";
+import icedCoffe from "../../assets/menu icons/iced-coffee-1.png";
+import CoffeCup from "../../assets/menu icons/coffee.png";
+import Teacup from "../../assets/menu icons/tea-cup.png";
+import Milkshake from "../../assets/menu icons/milkshake.png";
+import drink from "../../assets/menu icons/drink.png";
+import cookie from "../../assets/menu icons/cookie.png";
 
 export default function MenuNav() {
   const navItems = [
@@ -49,6 +49,7 @@ export default function MenuNav() {
   return (
     <>
       <nav
+        dir="rtl"
         className="  crimson-text-regular
         flex
         gap-4 lg:gap-17
@@ -74,11 +75,10 @@ export default function MenuNav() {
             hover:-translate-y-1
       "
           >
+            <img src={item.icon} alt={item.alt} className="w-[50px]" />
             <NavLink to={item.path} className="leading-[50px]">
               {item.title}
             </NavLink>
-
-            <img src={item.icon} alt={item.alt} className="w-[50px]" />
           </div>
         ))}
       </nav>

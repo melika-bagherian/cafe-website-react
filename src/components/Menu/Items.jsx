@@ -1,26 +1,31 @@
-import latte from "../../assets/latte.jpeg";
-export default function Items({ name, price }) {
+export default function Items({ name, price, image, ingredients }) {
   return (
     <>
       <section
         dir="rtl"
-        className=" rounded-sm shadow-md p-[10px] mx-auto flex flex-row 
-        w-[50%]
-      items-center
-      justify-center 
-      gap-20
-    
+        className=" rounded-sm shadow-md
+        p-[10px] mx-auto  
+        w-[90%]
+        md:w-[40%]
+        items-ceter 
+        grid
+        grid-cols-[120px_1fr]
+        gap-20
+
       "
       >
-        <div className="w-[40%] max-w-[200px]  ">
-          <img src={latte} alt="latte " className="rounded-[10px] " />
-          {/* <button className="bg-[#eff]  w-[40px] h-[40px] rounded-[10px] mt-4 ">
-            +
-          </button> */}
+        <div className="w-[150px] h-[150px] shrink-0 overflow-hidden rounded-[10px] ">
+          <img
+            src={image}
+            alt="latte "
+            className="w-full h-full object-cover "
+          />
         </div>
-        <div>
+        <div className="self-center">
           <h1 className="crimson-text-semibold  text-xl ">{name}</h1>
-          <p>{price}</p>
+          <h2 className="crimson-text-regular">{ingredients}</h2>
+          <br />
+          <p className="crimson-text-regular">{price}</p>
         </div>
       </section>
     </>

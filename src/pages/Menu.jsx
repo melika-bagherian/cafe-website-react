@@ -2,13 +2,13 @@
 import MenuNav from "../components/Menu/MenuNav";
 import Navbar from "../components/Navbar";
 // import Items from "../components/Menu/Items";
-import HotCoffee from "../components/Menu/HotCoffee";
+import MenuPages from "../components/Menu/MenuPages";
 export default function Menu() {
   return (
     <>
       <Navbar />
       <MenuNav />
-      <HotCoffee />
+      <MenuPages />
     </>
   );
 }
