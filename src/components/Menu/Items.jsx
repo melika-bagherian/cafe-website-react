@@ -3,16 +3,24 @@ export default function Items({ name, price, image, ingredients }) {
     <>
       <section
         dir="rtl"
-        className=" rounded-sm shadow-md
-        p-[10px] mx-auto  
+        className="
+        rounded-xl
+        shadow-[0_5px_15px_rgba(120,90,60,0.22)]
+        p-[10px]
+        mx-auto
+        mb-5
+        mt-5
         w-[90%]
         md:w-[40%]
-        items-ceter 
         grid
-        grid-cols-[120px_1fr]
-        gap-20
-
-      "
+        grid-cols-[150px_1fr]
+        gap-8
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:shadow-[0_8px_20px_rgba(90,80,65,0.25)]
+        
+        "
       >
         <div className="w-[150px] h-[150px] shrink-0 overflow-hidden rounded-[10px] ">
           <img

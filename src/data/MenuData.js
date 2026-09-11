@@ -3,6 +3,26 @@ import cappu from "../assets/coffeImages/cappu.jpeg";
 import latte2 from "../assets/coffeImages/latte2.jpeg";
 import mocha from "../assets/coffeImages/mocha3.jpeg";
 import esspreso from "../assets/coffeImages/esspreso.jpeg";
+import icedAmericano from "../assets/itemsImage/iced-Americano.jpg";
+import iceLatte from "../assets/itemsImage/iceLatte.jpeg";
+import iceMocha from "../assets/itemsImage/icedMocha.jpeg";
+import iceCaramel from "../assets/itemsImage/icedCaramel.jpeg";
+import affogato from "../assets/itemsImage/affogato.jpeg";
+import cCake from "../assets/itemsImage/cCake.jpeg";
+import caCake from "../assets/itemsImage/caCake.jpeg";
+import cheeseCake from "../assets/itemsImage/cheeseCake.jpeg";
+import crosan from "../assets/itemsImage/crossan2.jpeg";
+import chocoCrosan from "../assets/itemsImage/cCrosan.jpeg";
+import Cshake from "../assets/itemsImage/Cshake.jpeg";
+import Vshake from "../assets/itemsImage/vShake.jpeg";
+import strawShake from "../assets/itemsImage/sShake.jpeg";
+import tea from "../assets/itemsImage/tea.jpeg";
+import greenTea from "../assets/itemsImage/greenTea.jpeg";
+import gol from "../assets/itemsImage/golg.jpg";
+import damnosh from "../assets/itemsImage/damnoosh.jpg";
+import limonade from "../assets/itemsImage/lemonade2.jpeg";
+import mohito from "../assets/itemsImage/mohito.jpeg";
+import strawSmothie from "../assets/itemsImage/strawSmotthie.jpeg";
 
 export const menuData = {
   hotCoffee: [
@@ -23,21 +43,21 @@ export const menuData = {
     {
       id: 3,
       name: "لاته",
-      ingredients: "اسپرسو، شیر",
+      ingredients: "",
       price: "150،000 تومان",
       image: latte2,
     },
     {
       id: 4,
       name: "کاپوچینو",
-      ingredients: "اسپرسو، فوم شیر",
+      ingredients: "",
       price: "150،000 تومان",
       image: cappu,
     },
     {
       id: 5,
       name: "موکا",
-      ingredients: "اسپرسو، فوم شیر، شکلات",
+      ingredients: "",
       price: "160،000 تومان",
       image: mocha,
     },
@@ -47,37 +67,37 @@ export const menuData = {
     {
       id: 6,
       name: "آیس آمریکانو",
-      ingredients: "اسپرسو، آب، یخ",
+      ingredients: "",
       price: "140،000 تومان",
-      image: null,
+      image: icedAmericano,
     },
     {
       id: 7,
       name: "آیس لاته",
-      ingredients: "اسپرسو، شیر، یخ",
+      ingredients: "",
       price: "155،000 تومان",
-      image: null,
+      image: iceLatte,
     },
     {
       id: 8,
       name: "آیس موکا",
-      ingredients: "اسپرسو، شیر، شکلات، یخ",
+      ingredients: "",
       price: "165،000 تومان",
-      image: null,
+      image: iceMocha,
     },
     {
       id: 9,
       name: "آیس کارامل ماکیاتو",
       ingredients: "اسپرسو، شیر، کارامل، یخ",
       price: "175،000 تومان",
-      image: null,
+      image: iceCaramel,
     },
     {
       id: 10,
       name: "آفوگاتو ",
       ingredients: "",
       price: "175،000 تومان",
-      image: null,
+      image: affogato,
     },
   ],
 
@@ -87,21 +107,21 @@ export const menuData = {
       name: "شیک شکلات",
       ingredients: "",
       price: "180،000 تومان",
-      image: null,
+      image: Cshake,
     },
     {
       id: 12,
       name: "شیک وانیل",
       ingredients: "",
       price: "170،000 تومان",
-      image: null,
+      image: Vshake,
     },
     {
       id: 13,
       name: "شیک توت‌فرنگی",
       ingredients: "",
       price: "180،000 تومان",
-      image: null,
+      image: strawShake,
     },
   ],
 
@@ -109,37 +129,37 @@ export const menuData = {
     {
       id: 14,
       name: "کیک شکلاتی",
-      ingredients: "کیک شکلاتی، سس شکلات",
+      ingredients: "",
       price: "150،000 تومان",
-      image: null,
+      image: cCake,
     },
     {
       id: 15,
       name: "چیزکیک",
-      ingredients: "پنیر خامه‌ای، بیسکویت",
+      ingredients: "",
       price: "160،000 تومان",
-      image: null,
+      image: cheeseCake,
     },
     {
       id: 16,
       name: "کیک هویج",
-      ingredients: "هویج، دارچین، گردو",
+      ingredients: "",
       price: "150،000 تومان",
-      image: null,
+      image: caCake,
     },
     {
       id: 17,
       name: "کروسان ساده",
-      ingredients: "خمیر کروسان، کره",
+      ingredients: "",
       price: "110،000 تومان",
-      image: null,
+      image: crosan,
     },
     {
       id: 18,
       name: "کروسان شکلاتی",
-      ingredients: "خمیر کروسان، شکلات",
+      ingredients: "",
       price: "135،000 تومان",
-      image: null,
+      image: chocoCrosan,
     },
   ],
 
@@ -149,28 +169,28 @@ export const menuData = {
       name: "چای سیاه",
       ingredients: "",
       price: "90،000 تومان",
-      image: null,
+      image: tea,
     },
     {
       id: 20,
       name: "چای سبز",
       ingredients: "",
       price: "100،000 تومان",
-      image: null,
+      image: greenTea,
     },
     {
       id: 21,
       name: "دمنوش گل‌گاوزبان",
       ingredients: "",
       price: "110،000 تومان",
-      image: null,
+      image: gol,
     },
     {
       id: 22,
       name: "دمنوش آرامش",
       ingredients: "گل محمدی، به‌لیمو، اسطوخودوس",
       price: "120،000 تومان",
-      image: null,
+      image: damnosh,
     },
   ],
 
@@ -178,30 +198,24 @@ export const menuData = {
     {
       id: 23,
       name: "لیموناد",
-      ingredients: "لیمو تازه، آب، شکر، یخ",
+      ingredients: "",
       price: "140،000 تومان",
-      image: null,
+      image: limonade,
     },
     {
       id: 24,
       name: "موهیتو",
       ingredients: "لیمو، نعناع، سیروپ، سودا، یخ",
       price: "150،000 تومان",
-      image: null,
+      image: mohito,
     },
+
     {
       id: 25,
-      name: "آیس تی",
-      ingredients: "چای، لیمو، یخ",
-      price: "130،000 تومان",
-      image: null,
-    },
-    {
-      id: 26,
       name: "اسموتی توت‌فرنگی",
-      ingredients: "توت‌فرنگی، شیر، یخ",
+      ingredients: "",
       price: "170،000 تومان",
-      image: null,
+      image: strawSmothie,
     },
   ],
 };
