@@ -1,15 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { BrowserRouter } from "react-router-dom";
-// import Home from "./pages/Home.jsx";
-import Menu from "./pages/Menu.jsx";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      {/* <Home /> */}
-      <Menu />
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </StrictMode>,
 );

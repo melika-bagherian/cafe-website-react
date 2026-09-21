@@ -5,7 +5,7 @@ import Milkshake from "../../assets/menu icons/milkshake.png";
 import drink from "../../assets/menu icons/drink.png";
 import cookie from "../../assets/menu icons/cookie.png";
 
-export default function MenuNav({ onCategoryChange }) {
+export default function MenuNav({ onCategoryChange, selectedCategory }) {
   const navItems = [
     {
       title: "نوشیدنی های گرم بر پایه قهوه",
@@ -49,7 +49,8 @@ export default function MenuNav({ onCategoryChange }) {
     <nav
       dir="rtl"
       className="
-        crimson-text-regular
+        vazirmatn-light
+        text-sm
         flex
         gap-4 lg:gap-17
         mt-8
@@ -63,22 +64,21 @@ export default function MenuNav({ onCategoryChange }) {
       {navItems.map((item) => (
         <button
           key={item.key}
-          onClick={() => onCategoryChange(item.key)}
-          className="
-            p-[10px]
+          onClick={() => onCategoryChange(item.key, item.title, item.icon)}
+          className={`
+            px-[10px] 
             flex flex-row
             shrink-0
             items-center
-            rounded-xl
+            rounded-3xl
             shadow-[0_4px_10px_rgba(190,185,174,0.45)]
             transition-all duration-200 ease-out
             hover:-translate-y-1
             cursor-pointer
              active:scale-[0.97]
-             
-          "
+            ${selectedCategory === item.key ? " bg-[#b5614a] text-[#f5f1ea]" : "bg-[#f0ece4]"}`}
         >
-          <img src={item.icon} alt={item.alt} className="w-[50px]" />
+          <img src={item.icon} alt={item.alt} className="w-[30px]" />
 
           <span className="leading-[50px]">{item.title}</span>
         </button>

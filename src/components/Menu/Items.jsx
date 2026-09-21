@@ -6,12 +6,8 @@ export default function Items({ name, price, image, ingredients }) {
         className="
         rounded-xl
         shadow-[0_5px_15px_rgba(120,90,60,0.22)]
-        p-[10px]
-        mx-auto
         mb-5
         mt-5
-        w-[90%]
-        md:w-[40%]
         grid
         grid-cols-[150px_1fr]
         gap-8
