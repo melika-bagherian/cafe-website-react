@@ -2,10 +2,12 @@ import { useState } from "react";
 import Items from "./Items";
 import MenuNav from "./MenuNav";
 import { menuData } from "../../data/MenuData";
+import FooterComponent from "../FooterComponent.jsx";
+import CoffeCup from "../../assets/menu icons/coffee.png";
 
 export default function MenuPages() {
   const [selectedCategory, setSelectedCategory] = useState("hotCoffee");
-  const [selectedIcon, setSelectedIcon] = useState();
+  const [selectedIcon, setSelectedIcon] = useState(CoffeCup);
   const [selectedtitle, setSelectedTitle] = useState(
     "نوشیدنی های گرم برپایه قهوه",
   );
@@ -53,6 +55,7 @@ export default function MenuPages() {
           />
         ))}
       </section>
+      <FooterComponent></FooterComponent>
     </div>
   );
 }
