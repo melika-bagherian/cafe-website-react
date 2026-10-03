@@ -24,13 +24,13 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className="relative flex flex-row ">
-      <h1 className="crimson-text-semibold  text-lg md:text-2xl   absolute right-8 mt-8  ">
+    <div className="relative flex flex-row sticky top-0 bg-[#e9e5db] z-50  h-15 items-center ">
+      <h1 className="crimson-text-semibold  text-lg md:text-2xl  absolute right-8   ">
         🌙 مه نوش
       </h1>
       <nav
         dir="rtl"
-        className=" flex gap-10 mt-8 px-4 md:px-10 lg:px-16 
+        className=" flex gap-10 px-4 md:px-10 lg:px-16 
       text-l
       vazirmatn-light 
       "
