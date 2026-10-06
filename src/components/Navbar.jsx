@@ -24,16 +24,12 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className="relative flex flex-row sticky top-0 bg-[#e9e5db] z-50  h-15 items-center ">
-      <h1 className="crimson-text-semibold  text-lg md:text-2xl  absolute right-8   ">
-        🌙 مه نوش
-      </h1>
+    <div className="sticky top-0 z-50 h-16 bg-[#e9e5db] flex items-center justify-between px-6 md:px-10 lg:px-16">
+      <h1 className="crimson-text-semibold text-lg md:text-2xl">🌙 مه نوش</h1>
+
       <nav
         dir="rtl"
-        className=" flex gap-10 px-4 md:px-10 lg:px-16 
-      text-l
-      vazirmatn-light 
-      "
+        className="flex gap-5 md:gap-10 vazirmatn-light text-sm md:text-base"
       >
         {navItems.map((item) => {
           return (
@@ -43,7 +39,7 @@ export default function Navbar() {
               className={({ isActive }) =>
                 isActive
                   ? "text-[#b5614a] border-b-2 border-[#b5614a]"
-                  : "#6b5b52;"
+                  : "text-[#6b5b52]"
               }
             >
               {item.title}
