@@ -1,4 +1,4 @@
-import coffeeTable from "../../assets/coffee-table.jpeg";
+import coffeeTable from "../../assets/coffee-table.jpg";
 import coffeeBean from "../../assets/coffee-beans.jpg";
 import cake from "../../assets/plain-cake.jpg";
 
